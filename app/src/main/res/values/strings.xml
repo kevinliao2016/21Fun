@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">21fun</string>
+    <string name="empty">~</string>
+    <string name="plus_operator">+</string>
+    <string name="minus_operator">-</string>
+    <string name="multiply_operator">*</string>
+    <string name="divide_operator">/</string>
+    <string name="success">/</string>
+    <string name="fail">/</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
