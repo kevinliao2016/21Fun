@@ -7,6 +7,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import come.ninjamonster.a21fun.R;
 
 
 /**
@@ -15,9 +20,15 @@ import android.view.ViewGroup;
  */
 public class GameFragment extends Fragment {
 
+    @BindView(R.id.numeric_one)  public Button mNumericOneButton;
+    @BindView(R.id.numeric_two)  public Button mNumericTwoButton;
+    @BindView(R.id.numeric_three)  public Button mNumericThreeButton;
+    @BindView(R.id.numeric_four)  public Button mNumericFourButton;
 
-    private OnFragmentInteractionListener mListener;
-
+    @BindView(R.id.plus_button)  public Button mPlusButton;
+    @BindView(R.id.minus_button) public Button mMinusButton;
+    @BindView(R.id.multiply_button)  public Button mMultiplyButton;
+    @BindView(R.id.divide_button)  public Button mDivideButton;
     public GameFragment() {
         // Required empty public constructor
     }
@@ -33,30 +44,23 @@ public class GameFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_game, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_game, container, false);
+        ButterKnife.bind(this, rootView);
+
+        return rootView;
     }
 
     public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
     }
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
-        }
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
-        mListener = null;
     }
 
     /**
