@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="come.ninjamonster.a21fun.fragments.GameRecordFragment">
+    tools:context="com.ninjamonster.a24fun.fragments.GameRecordFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

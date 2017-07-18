@@ -1,4 +1,4 @@
-package come.ninjamonster.a21fun.fragments;
+package com.ninjamonster.a24fun.fragments;
 
 import android.content.Context;
 import android.net.Uri;
@@ -8,25 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import come.ninjamonster.a21fun.R;
+import com.ninjamonster.a24fun.R;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * create an instance of this fragment.
  */
-public class GameRecordFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-
-
-    private OnFragmentInteractionListener mListener;
-
-    public GameRecordFragment() {
-        // Required empty public constructor
-    }
-
+public class InstructionFragment extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -37,7 +26,8 @@ public class GameRecordFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_game_record, container, false);
+        String instruction = "Use the set of Four Number and the operations that are provided to get result of 21.";
+        return inflater.inflate(R.layout.fragment_instruction, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

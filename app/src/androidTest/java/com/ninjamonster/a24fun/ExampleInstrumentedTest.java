@@ -1,4 +1,4 @@
-package come.ninjamonster.a21fun;
+package com.ninjamonster.a24fun;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

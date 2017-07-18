@@ -3,54 +3,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="come.ninjamonster.a21fun.fragments.GameFragment">
+    tools:context="com.ninjamonster.a24fun.fragments.GameFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <Button
         android:id="@+id/numeric_one"
-        android:layout_width="88dp"
-        android:layout_height="70dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/empty"
         android:textSize="@dimen/button_text"
         android:layout_marginStart="16dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/numeric_two"
-        tools:layout_constraintBaseline_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp" />
+        tools:layout_editor_absoluteY="240dp"
+        tools:layout_editor_absoluteX="16dp" />
 
     <Button
         android:id="@+id/numeric_two"
-        android:layout_width="88dp"
-        android:layout_height="70dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/empty"
         android:textSize="@dimen/button_text"
-        app:layout_constraintRight_toLeftOf="@+id/plus_button"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/numeric_four"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="25dp"
-        android:layout_marginRight="15dp" />
+        tools:layout_editor_absoluteY="240dp"
+        tools:layout_editor_absoluteX="111dp" />
 
     <Button
         android:id="@+id/numeric_three"
-        android:layout_width="88dp"
-        android:layout_height="70dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/empty"
         android:textSize="@dimen/button_text"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toTopOf="@+id/clear_button"
         android:layout_marginStart="16dp"
-        tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="41dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp" />
+        tools:layout_editor_absoluteX="16dp" />
 
     <Button
         android:id="@+id/numeric_four"
-        android:layout_width="88dp"
-        android:layout_height="70dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/empty"
         android:textSize="@dimen/button_text"
         tools:layout_constraintRight_creator="1"
@@ -62,59 +51,41 @@
 
     <Button
         android:id="@+id/plus_button"
-        android:layout_width="88dp"
-        android:layout_height="70dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="33dp"
         android:text="@string/plus_operator"
         android:textSize="@dimen/button_text"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/multiply_button"
-        android:layout_marginEnd="33dp"
-        app:layout_constraintRight_toRightOf="@+id/display_text_view"
-        android:layout_marginBottom="25dp"
-        android:layout_marginRight="33dp" />
+        tools:layout_editor_absoluteY="240dp"
+        tools:layout_editor_absoluteX="191dp" />
 
     <Button
         android:id="@+id/minus_button"
-        android:layout_width="88dp"
-        android:layout_height="70dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/minus_operator"
         android:textSize="@dimen/button_text"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/divide_button"
         android:layout_marginEnd="9dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="25dp"
-        android:layout_marginRight="9dp" />
+        tools:layout_editor_absoluteY="240dp"
+        tools:layout_editor_absoluteX="267dp" />
 
     <Button
         android:id="@+id/multiply_button"
-        android:layout_width="88dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/multiply_operator"
         android:textSize="@dimen/button_text"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/numeric_four"
-        app:layout_constraintRight_toRightOf="@+id/plus_button"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/plus_button"
-        app:layout_constraintTop_toTopOf="@+id/numeric_four" />
+        tools:layout_editor_absoluteY="355dp"
+        tools:layout_editor_absoluteX="191dp" />
 
     <Button
         android:id="@+id/divide_button"
-        android:layout_width="88dp"
-        android:layout_height="70dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:text="@string/divide_operator"
         android:textSize="@dimen/button_text"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/minus_button"
-        app:layout_constraintBaseline_toBaselineOf="@+id/multiply_button"
-        tools:layout_constraintBaseline_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/minus_button" />
+        tools:layout_editor_absoluteY="355dp"
+        tools:layout_editor_absoluteX="267dp" />
 
     <Button
         android:id="@+id/clear_button"
@@ -147,7 +118,7 @@
     <TextView
         android:id="@+id/display_text_view"
         android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:textSize="@dimen/button_text"
         android:gravity="center_vertical"
         tools:layout_constraintTop_creator="1"
@@ -165,17 +136,18 @@
     <TextView
         android:id="@+id/timer_text_view"
         android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:text="00:00:00"
         android:textSize="@dimen/button_size"
-        android:gravity="center_vertical"
+        android:gravity="center_vertical|center_horizontal"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="@+id/display_text_view"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="69dp"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="@+id/display_text_view"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <TextView
         android:id="@+id/result_test_view"

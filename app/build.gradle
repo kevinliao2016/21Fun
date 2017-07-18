@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "come.ninja.a21fun"
+        applicationId "come.ninja.a24fun"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
@@ -33,4 +33,7 @@ dependencies {
     //butter knife
     compile 'com.jakewharton:butterknife:8.6.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+
+    compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+    compile 'nl.qbusict:cupboard:2.2.0'
 }
